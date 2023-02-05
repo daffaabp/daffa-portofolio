@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" id="home">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Portofolio</title>
+
+    <!-- Bootstrap -->
+    <!-- untuk menghubungkan html kalian ke css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Di Part 2 kita akan menambahkan navbar, dimana di navbar itu kita akan simpan link yang dapat berpindah ke bagian yang bersangkutan -->
+    <!-- lalu kita akan buat agar peprindahan halamannya halus -->
+
+    <!-- navbar -->
+    <!-- buka di situs bootstrap 3, lalu buka di komponen, kita buat agar navbar nya tetap diatas walaupun kita scroll, navbar-inverse bertujuan agar navbarnya berwarna hitam -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- disini kita buat header -->
+            <div class="navbar-header">
+                <!-- lalu kita copy bagian button, untuk mengeluarkan tombol ketika tampilan menjadi layar hp -->
+                <!-- sbg catatan : id data-terget harus sesuai dengan id bs-example-navbar-collapse-1-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#home" class="navbar-brand page-scroll">Daffa Budi Prasetya</a>
+            </div>
+            <!-- tambahkan navbar about, portofolio, contact -->
+            <!-- collapse disini bertujuan untuk mengakali tampilan navbar ketika di handphone -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- klo kita klik id, maka dia akan tersimpan di halaman paling atas -->
+                    <!-- kita kasih kelas untuk tiap-tiap link ini agar nanti jquer gampang mencarinya -->
+                    <li><a href="#about" class="page-scroll">About</a></li>
+                    <li><a href="#portofolio" class="page-scroll">Portofolio</a></li>
+                    <li><a href="#contact" class="page-scroll">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+        <img src="../portofolio/img/daffa.png" class="img-circle">
+        <h1>Daffa Music</h1>
+        <p>Lecturer | Web Developer | Musician</p>
+
+    </div>
+    <!-- akhir jumbotron -->
+
+
+    <!-- about -->
+    <section class="about">
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- untuk membuat tulisan About ke tengah -->
+                    <h2 class="text-center">About</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- offset berguna untuk memberi satu kolom kosong disebelah kiri awal agar pembagian kolomnya sesuai (rata tengah) -->
+                <div class="col-sm-5 col-sm-offset-1
+                ">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit exercitationem eius doloremque
+                        accusantium ad harum. Temporibus sed maxime quos ipsam voluptas est, illo nulla vero corporis
+                        natus, eveniet culpa impedit!</p>
+                </div>
+                <div class="col-sm-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti soluta alias totam id cumque.
+                        Aliquid eveniet similique asperiores corporis placeat in non ullam beatae consequuntur quae. Ex
+                        sint blanditiis porro?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir about -->
+
+    <!-- potofolio -->
+    <section class="portofolio">
+        <div id="portofolio" class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Portofolio</h2>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- tag a href berfungsi agar nanti gambarnya bisa di klik -->
+                    <!-- lalu di bootstrap ada tag yang namanya thumnail agar nanti gambarnya menjadi kecil dan ada border putihnya -->
+                    <a href="" class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="   " class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="   " class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="   " class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="   " class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="   " class="thumbnail">
+                        <img src="img/gmbr1.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir portofolio -->
+
+    <!-- contact -->
+    <section class="contact">
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Contact</h2>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <!-- kita kasih offset 2, agar kosong sebanyak 2 kolom di sisi kanan dan kirinya -->
+                <div class="col-sm-8 col-sm-offset-2">
+                    <!-- untuk membuat form -->
+                    <form>
+                        <!-- agar bagus, perlu ditambahkan tag berikut terlebih dahulu -->
+                        <div class="form-group">
+                            <!-- for ini nantinya harus terhubung dengan input propertinya id -->
+                            <label for="nama">Nama</label>
+                            <!-- lalu ada input yg namanya text, ada namanya, lalu ada form control supaya style nya otomatis rapih, lalu kita pake property html5 yaitu placeholder untuk input masukkan nama-->
+                            <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="masukkan email">
+                        </div>
+                        <div class="form-group">
+                            <label for="telp">No Telepon</label>
+                            <input type="tlp" id="telp" class="form-control" placeholder="masukkan no telepon">
+                        </div>
+
+                        <!-- Kita bikin combo box -->
+                        <select class="form-control">
+                            <option>-- Pilih Kategori --</option>
+                            <option>Web Design</option>
+                            <option>Web Development</option>
+                        </select>
+
+                        <!-- Kontrol formulir yang mendukung banyak baris teks.  -->
+                        <div class="form-group">
+                            <label for="pesan"></label>
+                            <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
+                        </div>
+                        <!-- disini kita memerlukan button, disini saya menggunakan button dari bootsrap -->
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir contact s-->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- tag 1 pada bootstrap digunakan untuk membuat icon -->
+                    <p>&copy copyright 2022 | built with <i class="glyphicon glyphicon-heart"></i> by. <a
+                            href="http://instagram.com/daffaabp">Daffa Budi Prasetya</a>.</p>
+                </div>
+            </div>
+            <!-- terakhir kita akan bikin combo -->
+            <div class="col-sm-12">
+                <a href="https://www.youtube.com/channel/UCDBev6iC18fsdU2FtRHvUPg" class="btn btn-danger"><i
+                        class="glyphicon glyphicon-play"></i> Subscribe to Youtube</a>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Di Part 2 kita akan menambahkan navbar, dimana di navbar itu kita akan simpan link yang dapat berpindah ke bagian yang bersangkutan -->
+    <!-- lalu kita akan buat agar peprindahan halamannya halus -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- untuk koneksi ke jQuery -->
+    <!-- <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script> -->
+
+
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- Cara memakai Bootstrap yaitu kita tinggal memanggil kelas-kelas yang ada di dalam CSS -->
